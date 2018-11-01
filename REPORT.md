@@ -1,5 +1,5 @@
 # Tableau Story Project
-- Data: baseball_data.csv
+- Data: [baseball_data.csv](baseball_data.csv)
 - [Summary](#summary)
 - [Design](#design)
 - [Feedback](#feedback)
