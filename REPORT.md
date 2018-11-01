@@ -1,7 +1,7 @@
 # Tableau Story Project
 - Data: [baseball_data.csv](baseball_data.csv)
-- [First Version](https://public.tableau.com/profile/vicky2366#!/vizhome/BaseballPlayersData_story_v1/Story1)
-- [Final Version](https://public.tableau.com/views/BaseballPlayersData_story_final/Story1?:embed=y&:display_count=yes)
+- [First Version Story](https://public.tableau.com/shared/3G3Z7RD5G?:display_count=yes)
+- [Final Version Story](https://public.tableau.com/views/BaseballPlayersData_story_final/Story1?:embed=y&:display_count=yes)
 - [Summary](#summary)
 - [Design](#design)
 - [Feedback](#feedback)
