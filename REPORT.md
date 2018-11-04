@@ -1,7 +1,7 @@
 # Tableau Story Project
 By Vicky Fang<br>
 
-- Data: [baseball_data.csv](baseball_data.csv)
+- Data after cleaning: [baseball_data_no_zero.csv](baseball_data_no_zero.csv)
 - [First Version Story](https://public.tableau.com/shared/3G3Z7RD5G?:display_count=yes)
 - [Final Version Story](https://public.tableau.com/views/BaseballPlayersData_story_final/Story1?:embed=y&:display_count=yes)
 - [Summary](#summary)
@@ -13,13 +13,27 @@ By Vicky Fang<br>
 
 This data set contains 1,157 baseball players including their handedness (right or left handed), height (in inches), weight (in pounds), batting average, and home runs. I’ve explored the data set first by visualizing the four measurements, *height,* *weight,* *batting average*, and *home runs*. Then I’ve explored the relationships between *batting average* and *home runs*. These explorations can all be filtered by the handness. 
 
-## Design
+## Design 
 
-First, I want to display the overall performance (by *home runs* and *batting average*) of the baseball players in the data set. I’ve displayed a bar graph, which viewers can use to look up the performance(s) of the baseball players.
+### Data Cleaning ###
 
-Then I want to show the descriptive statistics of the data set so that I can have an overview picture of the data. After connecting the data to Tableau, I know that I have the following dimensions and measures: *player name*, *handness*, *height*, *weight*, *batting average*, and *home runs*. I've made histograms of height and weight data. We can see that most baseball players in this data set weighs between 180 and 190 pounds. Most baseball players are from 72 to 74 inch tall. The most common batting average ranges from 0.2 to 0.3. According to Wikipedia, *"In modern times, a season batting average higher than .300 is considered to be excellent, and an average higher than .400 a nearly unachievable goal.”* This is consistent with my graphs since we can see that there are few players having an average higher than 0.3. 
+As suggested by reviewer that "the players with batting averages of 0.0 are almost all pitchers, which generally don't go to bat", I decide to remove the players with batting averages of 0.0 since we cannot tell if the player is really bad at batting or he just never has a chance to bat. 
 
-Finally I’ve tried to explore the relationships between *batting average* and *home runs* using a scatter plot*.* I want to see that if batting average is positively related to home runs so I’ve added a trend line. Since batting average *“**is defined by the number of hits divided by at bats**”*, I assume that players with higher batting average would hit more home runs. From the scatter plot, I can see that although there is a positive correlation between the two measurements, the correlation is not very strong. 
+### Design Decisions ###
+
+I want to tell a story of the relationship between batting average and home runs. Therefore, I first look at the *home runs* and *batting average* of the baseball players. I've used a bar graph here because it's easy to sort and allows me to compare the batting averages and home runs among players. Instead of looking at thousands of data, I've selected the top 20 players with the most home runs. Since *home runs* and *batting average* have different ranges of values, I've decided to show the mark labels. Average and median lines are also added so that users can compare each player with the rest of the players. 
+
+After visualizing the performance of the top 20 players, I used histograms to describe the distributions of *home runs* and *batting average* of the entire data set. The bin size for the *Home Runs* histogram is set to 20. Since the range is from 0 to 563, I think 20 is appropriate sine I don't want the groups to be too coarse or too detailed. The bin size of the *Batting Average* is set to 0.0118. This time, I took the *"Suggest Bin Size"* value. I listed the range and bin size of the histograms in the captions to help users understand the graphs.  
+
+To explore the relationship between *home runs* and *batting average*, I've used a scatter plot. A scatter plot is used to *"display values for typically two variables for a set of data"*. From the histograms of *home runs* and *batting average*, I've guessed that players with more home runs tend to have higher batting average because the batting averages of most top 20 players are distributed in the right part of the histogram. However, I'm not very sure about the relationship. With a scatter plot, I could display a trend line to see if there's a positive correlation between the two variables. To make the graph more interesting, I've also added *handness* as a filter. I want to see if there's a difference in the relationship when players are using different hands. I've used *highlight feature* on the legend so that users can click on a type of handness or a mark to highlight matching marks in the view.   
+
+## Findings
+
+First, I want to display the overall performance (by *home runs* and *batting average*) of the top 20 baseball players with the most home runs. I’ve displayed a bar graph, which viewers can use to look up the performance(s) of the baseball players.
+
+Then I want to show the descriptive statistics of the two variables I'm interested in so that I can have an overview picture of the data. Thus, I've made histograms of *home runs* and *batting average*. After adjusting the bin size, I have a *Home Runs* histogram that's skewed to the right since most players have less than 50 home runs. I also have a *Batting Average* histogram that's skewed to the left. The most common batting average ranges from 0.24 to 0.27. According to Wikipedia, *"In modern times, a season batting average higher than .300 is considered to be excellent, and an average higher than .400 a nearly unachievable goal.”* This is consistent with my graph since we can see that there are few players having an average higher than 0.3. Then I've tried to see where the top 20 players would be distributed in the *Batting Average* histogram. I've found that most of them would be in the right side of the histogram, from 0.25 to 0. 28. Therefore, I have an assumption that players with more home runs tend to have higher batting averages.   
+
+To check if my assumption is true, I explored the relationships between *batting average* and *home runs* using a scatter plot. I want to see that if batting average is positively related to home runs so I’ve added a trend line. From the scatter plot, I can see that although there is a positive correlation between the two measurements, the correlation is not very strong. I've also added the handness as a filter to the scatter plot. By selecting a handness, I can see that right-hand players and left-hand players have stronger correlations between *home runs* and *batting averages* that players using both hands.  
 
 **Changes made after [feedback](#feedback)**
 
