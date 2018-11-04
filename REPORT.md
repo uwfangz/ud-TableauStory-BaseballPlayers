@@ -7,6 +7,7 @@ By Vicky Fang<br>
 - [Final Version (revised)](https://public.tableau.com/views/BaseballPlayersData_story_final_rev1/Story1?:embed=y&:display_count=yes&publish=yes)
 - [Summary](#summary)
 - [Design](#design)
+- [Findings](#findings)
 - [Feedback](#feedback)
 - [Reference](#reference)
 
