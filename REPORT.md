@@ -3,7 +3,8 @@ By Vicky Fang<br>
 
 - Data after cleaning: [baseball_data_no_zero.csv](baseball_data_no_zero.csv)
 - [First Version Story](https://public.tableau.com/shared/3G3Z7RD5G?:display_count=yes)
-- [Final Version Story](https://public.tableau.com/views/BaseballPlayersData_story_final/Story1?:embed=y&:display_count=yes)
+- [Second Version Story](https://public.tableau.com/views/BaseballPlayersData_story_final/Story1?:embed=y&:display_count=yes)
+- [Final Version (revised)](https://public.tableau.com/views/BaseballPlayersData_story_final_rev1/Story1?:embed=y&:display_count=yes&publish=yes)
 - [Summary](#summary)
 - [Design](#design)
 - [Feedback](#feedback)
@@ -70,7 +71,9 @@ The title of the story is *Differences among the performance of the baseball pla
 
 ## Reference
 
-- [Batting average (baseball)](https://en.wikipedia.org/wiki/Batting_average_(baseball))
-- [Home run](https://en.wikipedia.org/wiki/Home_run)
+- [Batting average (baseball) Wikipedia](https://en.wikipedia.org/wiki/Batting_average_(baseball))
+- [Home run Wikipedia](https://en.wikipedia.org/wiki/Home_run)
 - [Reference Lines, Bands, Distributions, and Boxes](https://onlinehelp.tableau.com/current/pro/desktop/en-us/reference_lines.htm)
 - [Creating a Reference Line which Appears and Disappears Based on a Condition](https://kb.tableau.com/articles/howto/creating-a-reference-line-which-appears-and-disappears-based-on-a-condition)
+- [Scatter plot Wikipedia](https://en.wikipedia.org/wiki/Scatter_plot)
+- [Legend Highlight](https://onlinehelp.tableau.com/current/pro/desktop/en-us/actions_highlight_colorlegend.htm)
